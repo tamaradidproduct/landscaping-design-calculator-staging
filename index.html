@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#1f2523" />
     <link rel="icon" href="/landscaping-design-calculator-staging/icon.svg" type="image/svg+xml" />
     <title>Plan Builder</title>
-    <script type="module" crossorigin src="/landscaping-design-calculator-staging/assets/index-qDD7S1WJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/landscaping-design-calculator-staging/assets/index-yECzXe6V.css">
+    <script type="module" crossorigin src="/landscaping-design-calculator-staging/assets/index-BWUKPcLA.js"></script>
+    <link rel="stylesheet" crossorigin href="/landscaping-design-calculator-staging/assets/index-DfMaCJdU.css">
   <link rel="manifest" href="/landscaping-design-calculator-staging/manifest.webmanifest"></head>
   <body>
     <main class="app">
@@ -31,8 +31,15 @@
           <button type="button" id="outline">Outline</button>
           <div class="menu" id="outline-menu" hidden>
             <button type="button" data-outline="boundary">Plot boundary</button>
-            <button type="button" data-outline="house">House</button>
+            <button type="button" data-outline="feature">Existing feature…</button>
           </div>
+          <form class="menu feature-menu" id="feature-menu" hidden>
+            <p class="menu-title">What is it?</p>
+            <div class="chips" id="feature-presets"></div>
+            <label for="feature-name">Or type a name</label>
+            <div class="row"><input id="feature-name" autocomplete="off" placeholder="e.g. AC pad" />
+            <button type="submit" class="primary">Outline it</button></div>
+          </form>
         </div>
         <button type="button" id="fit">Fit page</button>
       </div>
