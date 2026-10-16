@@ -8,8 +8,8 @@
     <meta name="theme-color" content="#1f2523" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/landscaping-design-calculator-staging/icon.svg" type="image/svg+xml" />
     <title>Plan Builder</title>
-    <script type="module" crossorigin src="/landscaping-design-calculator-staging/assets/index-CM6jIu6T.js"></script>
-    <link rel="stylesheet" crossorigin href="/landscaping-design-calculator-staging/assets/index-ml93C2CB.css">
+    <script type="module" crossorigin src="/landscaping-design-calculator-staging/assets/index-DB0yb6Bw.js"></script>
+    <link rel="stylesheet" crossorigin href="/landscaping-design-calculator-staging/assets/index-Bz5cKjbI.css">
   <link rel="manifest" href="/landscaping-design-calculator-staging/manifest.webmanifest"></head>
   <body>
     <main class="app">
@@ -19,6 +19,7 @@
           <canvas class="sharp" id="sharp" hidden></canvas>
           <div class="loading" id="loading" hidden>Opening plot plan…</div>
         </div>
+        <header class="plan-head" id="plan-head"></header>
         <div class="dock">
           <div class="segmented" id="shape" role="group" aria-label="Draw the outline" hidden>
             <button type="button" data-shape="freehand" aria-pressed="true" title="Freehand (X switches)">Freehand</button>
@@ -30,9 +31,6 @@
       <section class="screen" id="screen-auth" hidden></section>
       <section class="screen" id="screen-plans" hidden></section>
       <aside class="sidebar" id="sidebar" hidden>
-        <section class="side-section">
-          <button type="button" id="back-to-plans">← Plans</button>
-        </section>
         <section class="side-section">
           <div class="row split">
             <button type="button" id="undo" disabled title="Undo (⌘Z)">↶ Undo</button>
@@ -69,7 +67,7 @@
                 </button>
                 <button type="button" class="layer-row" id="file-button" title="Replace the plot plan">
                   <span class="layer-name" id="name"></span>
-                  <svg class="line-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 2.5l2.5 2.5L6 12.5H3.5V10z" /></svg>
+                  <svg class="line-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 5.5h10M10 3l2.5 2.5L10 8M13.5 10.5h-10M6 8l-2.5 2.5L6 13" /></svg>
                 </button>
               </div>
               <div class="replace-confirm" id="replace-confirm" hidden>
